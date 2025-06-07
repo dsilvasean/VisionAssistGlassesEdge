@@ -1,0 +1,15 @@
+certifi==2025.4.26
+cffi==1.17.1
+charset-normalizer==3.4.2
+idna==3.10
+numpy==2.2.6
+pycparser==2.22
+python-dotenv==1.1.0
+requests==2.32.3
+scipy==1.15.3
+sounddevice==0.5.2
+srt==3.5.3
+tqdm==4.67.1
+urllib3==2.4.0
+vosk==0.3.45
+websockets==15.0.1
