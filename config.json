@@ -1,0 +1,11 @@
+{
+    "server_url":"192.168.1.1",
+    "speechToText":{
+        "SAMPLE_RATE":44100,
+        "TARGET_RATE":16000,
+        "BLOCK_SIZE":8192,
+        "INPUT_DEVICE_ID":6,
+        "TIMEOUT":1.5, 
+        "MODEL_PATH":"/home/sean/repos/VisionAssistGlassesEdge/data/models/vosk-model-small-en-us-0.15"
+    }
+}
