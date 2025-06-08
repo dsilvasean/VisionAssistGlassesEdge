@@ -4,8 +4,18 @@
         "SAMPLE_RATE":44100,
         "TARGET_RATE":16000,
         "BLOCK_SIZE":8192,
-        "INPUT_DEVICE_ID":6,
+        "INPUT_DEVICE_ID":1,
         "TIMEOUT":1.5, 
-        "MODEL_PATH":"/home/sean/repos/VisionAssistGlassesEdge/data/models/vosk-model-small-en-us-0.15"
+        "MODEL_PATH":"/home/sean/new/VisionAssistGlassesEdge/data/models/vosk-model-small-en-us-0.15"
+    },
+    "textToSpeech":{
+        "PIPER_VOICE_DIR":"/opt/piper/",
+        "PIPER_MODEL":"en_US-amy-low.onnx",
+        "LENGTH_SCALE":0.5,
+        "PLAYBACK_DEVICE_ID":1,
+        "WAV_CHANNEL":1,
+        "WAV_SAMPLE_WIDTH":2,
+        "WAV_FRAMERATE":22050,
+        "NOTIFICATION_SOUND":"/home/sean/new/VisionAssistGlassesEdge/data/notificationsound.wav"
     }
 }

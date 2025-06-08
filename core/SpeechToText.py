@@ -50,7 +50,7 @@ class SpeechToTextManager:
             blocksize=self.BLOCK_SIZE,
             callback=self._audio_callback,
         ):
-            print("🎤 Listening to mic...")
+            print("Listening to mic...")
             while self.running:
                 await asyncio.sleep(0.1)  # Just keep the context alive
 
