@@ -21,6 +21,14 @@
         "WAV_FRAMERATE":22050,
         "NOTIFICATION_SOUND":"/home/sean/new/VisionAssistGlassesEdge/data/notificationsound.wav"
     },
+    "ImageProcessor":{
+        "ENABLE_ULTRASONIC_SENSOR":true,
+        "US_SENSOR_1":{"ECHO":27, "TRIGGER":4, "MAX_DISTANCE":4},
+        "US_SENSOR_2":{"ECHO":22, "TRIGGER":17, "MAX_DISTANCE":4},
+        "PI_CAMERA":{"CONFIG_TYPE":"STILL","SIZE":{"X":640, "Y":480}},
+        "CAPTURE_EVERY":2
+
+    },
     "SYSTEM_STATES" : ["GREET", "GREET_LOGGED_IN_USER", "READY_TO_USE_LOGGED_IN", "READY_TO_USE_NOT_LOGGED_IN", "SCENE_DESCRIPTION"]
 
 }

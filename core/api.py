@@ -1,13 +1,17 @@
 import httpx
 import asyncio
+from core.ws_client import WebSocketClient
 
 
 class API:
     """This class is responsible for the actual communication between the edge device and the cloud"""
-    def __init__(self, config, intent_queue:asyncio.Queue):
+    def __init__(self, config, intent_queue:asyncio.Queue, general_queue:asyncio.Queue):
         self.config = config.get("server")
         self.API_ROOT = f"http://{self.config.get('HOST')}:{self.config.get('PORT')}/api"
         self.intent_queue = intent_queue  # Shared queue
+        self.general_queue = general_queue
+
+        self.ws = WebSocketClient(self.config, general_queue)
 
 
     async def get_user_intent(self, data:str) -> str:
@@ -25,6 +29,9 @@ class API:
             
         except Exception as e:
             print(f"[API] Exception: {e}")
+
+    async def start_websocket(self):
+        await self.ws.connect()
 
 
 
