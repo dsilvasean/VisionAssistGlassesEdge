@@ -1,5 +1,8 @@
 {
-    "server_url":"192.168.1.1",
+    "server":{
+        "HOST":"192.168.1.181",
+        "PORT":5000
+    },
     "speechToText":{
         "SAMPLE_RATE":44100,
         "TARGET_RATE":16000,
@@ -17,5 +20,7 @@
         "WAV_SAMPLE_WIDTH":2,
         "WAV_FRAMERATE":22050,
         "NOTIFICATION_SOUND":"/home/sean/new/VisionAssistGlassesEdge/data/notificationsound.wav"
-    }
+    },
+    "SYSTEM_STATES" : ["GREET", "GREET_LOGGED_IN_USER", "READY_TO_USE_LOGGED_IN", "READY_TO_USE_NOT_LOGGED_IN", "SCENE_DESCRIPTION"]
+
 }
